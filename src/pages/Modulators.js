@@ -36,7 +36,7 @@ const Modulators = () => {
                 <>
                     <div className="container mainSpacing">
                         <Breadcrumb>
-                            <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                            <Breadcrumb.Item> <Link to="/"> Home </Link> </Breadcrumb.Item>
                             <Breadcrumb.Item active> MODULATORS</Breadcrumb.Item>
                         </Breadcrumb>
                         <div className="mainSpacing"><h1 className="text-center">MODULATORS / FREQUENCY SHIFTERS</h1></div>
