@@ -1,0 +1,204 @@
+@import "./variables/var.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    padding-top: 74px;
+    font-family: "Noto Sans", sans-serif;
+}
+img {
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-heading-color;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.mainSpacing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.image-main {
+    max-width: 100%;
+}
+.bg-dark {
+    background-color: #05284e !important;
+}
+.btn {
+    background-color: transparent;
+    color: #126ab1;
+    &:hover {
+        background-color: #126ab1;
+    }
+}
+.logowrap {
+    img {
+        max-width: 400px;
+    }
+}
+.frontpage {
+    h1,
+    h2 {
+        text-align: center;
+    }
+    h1 {
+        @extend .display-1;
+    }
+    ul {
+        text-align: left;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+.banner-wrap {
+    position: relative;
+    figure {
+        img {
+            max-width: 100%;
+            width: 100%;
+            object-fit: cover;
+            max-height: 400px;
+        }
+        .banner-txt-wrap {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            margin: auto;
+            h1 {
+                color: #fff;
+                text-shadow: rgba($color: #000000, $alpha: 1) 0 1px 5px;
+                font-size: 4rem;
+            }
+        }
+    }
+}
+.footer {
+    .d-flex {
+        align-items: center;
+    }
+    p {
+        font-size: 1rem;
+    }
+    i {
+        margin-right: 7px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .email,
+    .phone {
+        justify-content: center;
+    }
+    a {
+        color: #fff;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+}
+.contactwrap {
+    min-height: 87vh;
+    .email,
+    .linkedin,
+    .phone {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        align-items: center;
+        display: flex;
+        span {
+            color: #003539;
+            font-weight: 400;
+            padding-right: 15px;
+        }
+        a {
+            color: #444;
+            font-weight: 300;
+        }
+        i {
+            margin-right: 20px;
+            font-size: 2.5rem;
+        }
+    }
+}
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+    min-height: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease 0s;
+    transform: translate3d(0px, 0px, 0px);
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 50, 0.1) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 6px 16px;
+    will-change: transform;
+    .card-body {
+        padding: 40px;
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .card-text {
+            font-size: 1rem;
+            min-height: 50px;
+        }
+    }
+    .pdfIcon {
+        border-bottom: 1px solid #efefef;
+        padding: 20px;
+        text-align: center;
+        background: #f5f7f9;
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+    .frontpage {
+        min-height: 88vh;
+    }
+    .display-3 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .display-1 {
+        font-size: 5rem;
+    }
+    .contactwrap {
+        min-height: 85vh;
+        .email,
+        .linkedin,
+        .phone {
+            font-size: 1.5rem;
+            flex-wrap: wrap;
+            a {
+                display: block;
+            }
+            i {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    main {
+        min-height: inherit;
+    }
+}
